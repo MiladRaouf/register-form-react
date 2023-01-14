@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'sans-md';
+    src: url('../font/IRANSans.ttf') format('trueType');
+}
+
+@font-face {
+    font-family: 'sans-bd';
+    src: url('../font/IRAN\ Sans\ Bold.ttf') format('trueType');
+}
+
+:root {
+    --font-bold: 'sans-bd';
+    --font-medium: 'sans-md';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: var(--font-medium);
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background: #fafafa;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 100;
+}
+
+/* ==================================================================================================== */
+/* sm */
+
+.login-section {
+    /* background: red; */
+    margin-top: 30px;
+}
+
+.login-section .login-form {
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px 1px #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.login-form .rigth-section {
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.login-form form {
+    flex: 1;
+}
+
+.login-form form section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-form form section:not(.login-form form section:last-of-type) {
+    margin-bottom: 15px;    
+}
+
+.login-form form label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: none;
+    /* position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); */
+}
+
+.login-form form input {
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    outline: unset;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid #ddd;
+}
+
+.login-form form button {
+    border-radius: 50px;
+    padding: 15px;
+    border: none;
+    outline: unset;
+    font-size: 1em;
+    background: #2457c5;
+    color: #fff;
+}
+
+.login-form .left-section {
+    background: red;
+    height: 100%;
+    width: 50%;
+}
+
+/* ==================================================================================================== */
+/* md */
+
+/* ==================================================================================================== */
+/* lg */
+
+@media screen and (min-width:992px){
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ==================================================================================================== */
+/* xlg */
